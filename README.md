@@ -30,12 +30,12 @@ The bearings were mounted on the shaft as shown in Figure 1.
 
 ### 1. KMean clustering methods:
 * Running automated looping to detect pairs with highest Silhouette score:
-| # 2 features                | Clusters | Score |  
+| # 2 features      | Clusters | Score |  
 | ----------------------------| -------- | ----- |
-| a1_z_max, hert_max          | 2        | 0.822 | 
-| a1_y_median, a2_y_median    | 2        | 0.873 |
-| a1_x_MS_F, a2_x_MS_F        | 2        | 0.803 |
-| a1_x_entropy, a1_y_entropy  | 2        | 0.591 |
+| a1_z_max, hert_max      | 2        | 0.822 | 
+| a1_y_median, a2_y_median      | 2        | 0.873 |
+| a1_x_MS_F, a2_x_MS_F      | 2        | 0.803 |
+| a1_x_entropy, a1_y_entropy      | 2        | 0.591 |
 
   + Plotting of a1_y_median, a2_y_median:
 
