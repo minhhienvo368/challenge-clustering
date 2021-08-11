@@ -39,9 +39,9 @@ The bearings were mounted on the shaft as shown in Figure 1.
 
   + Plotting of a1_y_median, a2_y_median:
 
-   ![](plots/a1y_medianVSa1x_median_plot.png)
+   ![](plots/a1y_medianVSa2y_median_plot.png)
    
-   ![](plots/a1y_medianVSa1x_median_elbow.png)
+   ![](plots/a1y_medianVSa2y_median_elbow.png)
 
 
 
