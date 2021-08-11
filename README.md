@@ -61,7 +61,7 @@ The bearings were mounted on the shaft as shown in Figure 1.
 | # features | Clusters | Score |  
 | ---------- | -------- | ----- |
 | 2          | 2        | 0.873 | 
-| 3          | 3        | 0.808 |
+| 3          | 2        | 0.808 |
 | 4          | 2        | 0.793 |
 | 5          | 2        | 0.737 |
 | 6          | 2        | 0.791 |
