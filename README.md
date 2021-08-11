@@ -56,8 +56,8 @@ The bearings were mounted on the shaft as shown in Figure 1.
  + **6 features**: 'a1_y_median', 'a2_y_median','a1_y_median','a2_y_median', 'hert_median', 'w_median'
     ![](plots/6features.png)
     
- ##### Results of Kmeans corresponding with 2, 3, 4, 5 ,6-features
-Best silhouette scores for n features (KMeans++) using all the dataset
+ #### Results of Kmeans corresponding with 2, 3, 4, 5 ,6-features: 
+    Best silhouette scores for n features (KMeans++) using all the dataset
 | # features | Clusters | Score |  
 | ---------- | -------- | ----- |
 | 2          | 2        | 0.873 | 
@@ -68,19 +68,19 @@ Best silhouette scores for n features (KMeans++) using all the dataset
 
 #### 2. DBSCAN clustering methods:
 *** With **2 features**: 'a1_y_median', 'a2_y_median', bearing_dbscan = DBSCAN(eps=0.5, min_samples=10)
-Estimated number of clusters: 1
-Estimated number of noise points: 5
-Silhouette Coefficient for the Bearing Dataset Clusters: 0.79
+  + Estimated number of clusters: 1
+  + Estimated number of noise points: 5
+  + Silhouette Coefficient for the Bearing Dataset Clusters: 0.79
 
 *** With **3 features**: 'a1_y_median', 'a2_y_median','hert_median'
-Estimated number of clusters: 1
-Estimated number of noise points: 18
-Silhouette Coefficient for the Bearing Dataset Clusters: 0.57
+  + Estimated number of clusters: 1
+  + Estimated number of noise points: 18
+  + Silhouette Coefficient for the Bearing Dataset Clusters: 0.57
 
 *** With **4 features**: a1_y_median','a2_y_median', 'hert_median', 'w_median'
-Estimated number of clusters: 1
-Estimated number of noise points: 44
-Silhouette Coefficient for the Bearing Dataset Clusters: 0.24
+  + Estimated number of clusters: 1
+  + Estimated number of noise points: 44
+  + Silhouette Coefficient for the Bearing Dataset Clusters: 0.24
 
 ### Conclusion 
 The results show that the best scores of 2 features are with a cluster of size 2, and the silhouette score keeps decreasing as we increase the number of features used to cluster.
