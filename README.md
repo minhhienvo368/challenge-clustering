@@ -20,7 +20,7 @@ The bearings were mounted on the shaft as shown in Figure 1.
 
  - Using the cleaned data from previous classification assigment. 
  - Data description: contain 96 columns representatives of different features of experiments data (min, max, median, std, entropy, impulse factor, margin factor, frequence center, mean_square_frequency, root_mean_square_frequency, root_variance_frequency, crest_factor)  from the orginal features (a1_x, a2_x, a1_y, a2_y, a1_z, a2_z, hz (Hertz) and watt)
- - Create sub-dataset to explore the correllation of features: df_max, df_min, df_
+ - Generating sub-dataset to explore the correllation of features: df_max, df_min, df_median, df_entropy, df_mean_square_frequency, df_entropy
     + 'df_max' dataset description:
    ![](plots/df_max_description.png)
    
@@ -29,13 +29,21 @@ The bearings were mounted on the shaft as shown in Figure 1.
 
 
 ### 1. KMean clustering methods:
+* Running automated looping to detect pairs with highest Silhouette score:
+| # 2 features                | Clusters | Score |  
+| ----------------------------| -------- | ----- |
+| a1_z_max, hert_max          | 2        | 0.822 | 
+| a1_y_median, a2_y_median    | 2        | 0.873 |
+| a1_x_MS_F, a2_x_MS_F        | 2        | 0.803 |
+| a1_x_entropy, a1_y_entropy  | 2        | 0.591 |
+
+  + Plotting of a1_y_median, a2_y_median:
+
+   ![](plots/a1y_medianVSa1x_median_plot.png)
+   
+   ![](plots/a1y_medianVSa1x_median_elbow.png)
 
 
-
-### 2. DBSCAN clustering methods:
-
-
-### 3. Spectral Clustering:
 
  # Results
 Best silhouette scores for n features (KMeans++) using all the dataset
@@ -48,6 +56,15 @@ Best silhouette scores for n features (KMeans++) using all the dataset
 | 6          | 2        | 0.652  |
 
 ![](/Visuals/Visual_evolution_score.png)
+
+
+
+
+
+### 2. DBSCAN clustering methods:
+
+
+### 3. Spectral Clustering:
 
 # Conclusion 
 As we can see, the best scores are always with a cluster of size 2, and the silhouette score keeps decreasing as we increase the number of features used to cluster.
