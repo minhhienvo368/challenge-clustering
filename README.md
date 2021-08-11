@@ -82,6 +82,22 @@ The bearings were mounted on the shaft as shown in Figure 1.
   + Estimated number of noise points: 44
   + Silhouette Coefficient for the Bearing Dataset Clusters: 0.24
 
+#### 2. Spectral Clustering method:
+*** With **2 features**: 'a1_y_median', 'a2_y_median'
+Estimated number of clusters: 2
+Estimated number of noise points: 0
+Silhouette Coefficient: 0.884
+
+*** With **3 features**: 'a1_y_median', 'a2_y_median','hert_median'
+Estimated number of clusters: 4
+Estimated number of noise points: 0
+Silhouette Coefficient: 0.660
+
+*** With **4 features**: 'a1_y_median', 'a2_y_median','hert_median'
+Estimated number of clusters: 2
+Estimated number of noise points: 0
+Silhouette Coefficient: 0.814
+
 ### Conclusion 
  + The results show that the best scores of 2 features are with a cluster of size 2, and the silhouette score keeps decreasing as we increase the number of features used to cluster.
  + With the current dataset, the Kmeans method gives higher silhouette score than DBSCAN
