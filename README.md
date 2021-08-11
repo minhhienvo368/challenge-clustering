@@ -44,16 +44,16 @@ The bearings were mounted on the shaft as shown in Figure 1.
    
    ![](plots/a1y_medianVSa2y_median_elbow.png)
 
- + **3 features**: a1_y_median, a2_y_median, hertz_median
+ + **3 features**: a1_y_median, a2_y_median, hertz_median. **Silhouette score: 0.808**
     ![](plots/3D_3features.png)
 
- + **4 features**: a1_y_median, a2_y_median, 'hert_median', 'a1_x_median'
+ + **4 features**: a1_y_median, a2_y_median, 'hert_median', 'a1_x_median'. **Silhouette score: 0.793**
     ![](plots/4features.png)
     
- + **5 features**: 'a1_x_median', 'a2_x_median','a1_y_median','a2_y_median', 'hert_median'
+ + **5 features**: 'a1_x_median', 'a2_x_median','a1_y_median','a2_y_median', 'hert_median'.  **Silhouette score: 0.737**
     ![](plots/5features.png)
     
- + **6 features**: 'a1_y_median', 'a2_y_median','a1_y_median','a2_y_median', 'hert_median', 'w_median'
+ + **6 features**: 'a1_y_median', 'a2_y_median','a1_y_median','a2_y_median', 'hert_median', 'w_median'.  **Silhouette score: 0.791**
     ![](plots/6features.png)
     
  #### Results of Kmeans corresponding with 2, 3, 4, 5 ,6-features: 
@@ -61,7 +61,7 @@ The bearings were mounted on the shaft as shown in Figure 1.
 | # features | Clusters | Score |  
 | ---------- | -------- | ----- |
 | 2          | 2        | 0.873 | 
-| 3          | 3        | 0.700 |
+| 3          | 3        | 0.808 |
 | 4          | 2        | 0.793 |
 | 5          | 2        | 0.737 |
 | 6          | 2        | 0.791 |
