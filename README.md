@@ -47,19 +47,28 @@ The bearings were mounted on the shaft as shown in Figure 1.
  + **3 features**: a1_y_median, a2_y_median, hertz_median
     ![](plots/3D_3features.png)
 
-
- # Results
+ + **4 features**: a1_y_median, a2_y_median, 'hert_median', 'a1_x_median'
+    ![](plots/4features.png)
+    
+ + **5 features**: 'a1_x_median', 'a2_x_median','a1_y_median','a2_y_median', 'hert_median'
+    ![](plots/5features.png)
+    
+ + **6 features**: 'a1_y_median', 'a2_y_median','a1_y_median','a2_y_median', 'hert_median', 'w_median'
+    ![](plots/6features.png)
+    
+ # Results of Kmeans corresponding with 2, 3, 4, 5 ,6-features
 Best silhouette scores for n features (KMeans++) using all the dataset
 | # features | Clusters | Score |  
 | ---------- | -------- | ----- |
-| 2          | 2        | 0.856 | 
-| 3          | 2        | 0.717 |
-| 4          | 2        | 0.582 |
-| 5          | 2        | 0.446 |
-| 6          | 2        | 0.652 |
+| 2          | 2        | 0.873 | 
+| 3          | 3        | 0.700 |
+| 4          | 2        | 0.793 |
+| 5          | 2        | 0.737 |
+| 6          | 2        | 0.791 |
+
+
 
 ![](/Visuals/Visual_evolution_score.png)
-
 
 
 
@@ -67,12 +76,10 @@ Best silhouette scores for n features (KMeans++) using all the dataset
 ### 2. DBSCAN clustering methods:
 
 
-### 3. Spectral Clustering:
 
 # Conclusion 
-As we can see, the best scores are always with a cluster of size 2, and the silhouette score keeps decreasing as we increase the number of features used to cluster.
-It seems that we have 3 possible outliers that create their own cluster. By having values very dissimilar to the rest, it creates a nice separation between clusters. However, they are only 3 bearings in that cluster which is very unbalanced. We could also remove those from the dataset and redo the clustering search with the updated dataset.
+
++ The results show that the best scores of 2 features are with a cluster of size 2, and the silhouette score keeps decreasing as we increase the number of features used to cluster.
 
 
-# Timeline
-09/08/2021 - 11/08/2021
+# Timeline: 09/08/2021 - 11/08/2021
