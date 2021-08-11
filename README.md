@@ -22,8 +22,12 @@ The bearings were mounted on the shaft as shown in Figure 1.
  - Create sub-dataset to explore the correllation of features 
 
 
-### With KMean clustering methods:
+### 1. KMean clustering methods:
 
 
 
+### 2. DBSCAN clustering methods:
+
+
+### 3. Spectral Clustering:
 
