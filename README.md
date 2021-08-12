@@ -25,8 +25,7 @@ The bearings were mounted on the shaft as shown in Figure 1.
    <img src = "plots/df_max_description.png" width = "500" height = "300">
 
     + Heatmap of correlation between columns in 'df_max'
-   ![](plots/correlation_matrix_MAX.png)
-
+    <img src = "plots/correlation_matrix_MAX.png" width = "500" height = "400">
 
 #### 1. KMean clustering methods:
  + **2 features**: Running automated loops on each of sub-dataset to detect pairs with highest Silhouette score:
