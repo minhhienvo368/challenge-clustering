@@ -2,7 +2,7 @@
 Continuing previous work on the bearing analysis, guessing faulty bearings, the team came back for further expertise. They want to know what type of failures occur! Or rather, if the failures exhibit similarities to other failures.
 
 ### Content
-<img src = "https://i.postimg.cc/gkgJGTnj/1.jpg" width = "300" height = "300">
+<img src = "https://i.postimg.cc/gkgJGTnj/1.jpg" width = "300" height = "500">
  - For the experiments device shown on the picture was constructed. Two bearings were installed on the shaft. The rotation speed changed from 0 to 1500 rpm, was held for 10 seconds, and decreased to 250 rpm. 
  - The shaft was rotated using an DC motor connected to the shaft through a coupling. A radial load of 3.5 kg is applied to the shaft using a balanced weight.
 The bearings were mounted on the shaft as shown in Figure 1. 
@@ -22,8 +22,8 @@ The bearings were mounted on the shaft as shown in Figure 1.
  - Data description: contain 96 columns representatives of different features of experiments data (min, max, median, std, entropy, impulse factor, margin factor, frequence center, mean_square_frequency, root_mean_square_frequency, root_variance_frequency, crest_factor)  from the orginal features (a1_x, a2_x, a1_y, a2_y, a1_z, a2_z, hz (Hertz) and watt)
  - Generating sub-dataset to explore the correllation of features: df_max, df_min, df_median, df_std, df_entropy, df_mean_square_frequency.
     + 'df_max' dataset description:
-   ![](plots/df_max_description.png)
-   
+   <img src = "plots/df_max_description.png" width = "300" height = "300">
+
     + Heatmap of correlation between columns in 'df_max'
    ![](plots/correlation_matrix_MAX.png)
 
@@ -96,7 +96,7 @@ The bearings were mounted on the shaft as shown in Figure 1.
 *** With **4 features**: 'a1_x_median','a1_y_median','a2_y_median', 'hert_median'
   + Estimated number of clusters: 2
   + Estimated number of noise points: 0
-  +Silhouette Coefficient: 0.814
+  + Silhouette Coefficient: 0.814
 
 ### Conclusion 
   + The results show that the best scores of 2 features are with a cluster of size 2, and the silhouette score keeps decreasing as we increase the number of features used to cluster.
