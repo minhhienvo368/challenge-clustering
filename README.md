@@ -44,16 +44,16 @@ The bearings were mounted on the shaft as shown in Figure 1.
    <img src = "plots/a1y_medianVSa2y_median_elbow.png" width = "500" height = "400">
 
  + **3 features**: a1_y_median, a2_y_median, hertz_median. **Silhouette score: 0.808**
-    ![](plots/3D_3features.png)
+    <img src = "lots/3D_3features.png" width = "400" height = "400">
 
  + **4 features**: a1_y_median, a2_y_median, 'hert_median', 'a1_x_median'. **Silhouette score: 0.793**
-    ![](plots/4features.png)
+     <img src = "plots/4features.png" width = "360" height = "600">
     
  + **5 features**: 'a1_x_median', 'a2_x_median','a1_y_median','a2_y_median', 'hert_median'.  **Silhouette score: 0.737**
-    ![](plots/5features.png)
+     <img src = "plots/5features.png" width = "360" height = "600">
     
  + **6 features**: 'a1_y_median', 'a2_y_median','a1_y_median','a2_y_median', 'hert_median', 'w_median'.  **Silhouette score: 0.791**
-     <img src = "plots/6features.png" width = "400" height = "600">
+     <img src = "plots/6features.png" width = "360" height = "600">
 
  #### Results of Kmeans corresponding with 2, 3, 4, 5 ,6-features: 
     Best silhouette scores for n features (KMeans++) using all the dataset
