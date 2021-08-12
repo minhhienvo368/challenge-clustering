@@ -44,7 +44,6 @@ The bearings were mounted on the shaft as shown in Figure 1.
    <img src = "plots/a1y_medianVSa2y_median_elbow.png" width = "500" height = "400">
 
  + **Using Kmeans on 3 features**: a1_y_median, a2_y_median, hertz_median. **Silhouette score: 0.808**
-   ![](plots/3D_3features.png)
    <img src="plots/3D_plot.gif" alt="This is an animated 3D plot"/>
 
 
