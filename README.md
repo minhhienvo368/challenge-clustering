@@ -53,8 +53,8 @@ The bearings were mounted on the shaft as shown in Figure 1.
     ![](plots/5features.png)
     
  + **6 features**: 'a1_y_median', 'a2_y_median','a1_y_median','a2_y_median', 'hert_median', 'w_median'.  **Silhouette score: 0.791**
-    ![](plots/6features.png)
-    
+     <img src = "plots/6features.png" width = "400" height = "600">
+
  #### Results of Kmeans corresponding with 2, 3, 4, 5 ,6-features: 
     Best silhouette scores for n features (KMeans++) using all the dataset
 | # features | Clusters | Score |  
