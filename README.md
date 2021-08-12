@@ -2,8 +2,7 @@
 Continuing previous work on the bearing analysis, guessing faulty bearings, the team came back for further expertise. They want to know what type of failures occur! Or rather, if the failures exhibit similarities to other failures.
 
 ### Content
-![](https://i.postimg.cc/gkgJGTnj/1.jpg)
-<img src = "https://i.postimg.cc/gkgJGTnj/1.jpg" width = "100" height = "100">
+<img src = "https://i.postimg.cc/gkgJGTnj/1.jpg" width = "300" height = "300">
  - For the experiments device shown on the picture was constructed. Two bearings were installed on the shaft. The rotation speed changed from 0 to 1500 rpm, was held for 10 seconds, and decreased to 250 rpm. 
  - The shaft was rotated using an DC motor connected to the shaft through a coupling. A radial load of 3.5 kg is applied to the shaft using a balanced weight.
 The bearings were mounted on the shaft as shown in Figure 1. 
