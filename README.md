@@ -20,7 +20,7 @@ The bearings were mounted on the shaft as shown in Figure 1.
 
  - Using the cleaned data from previous classification assigment. 
  - Data description: contain 96 columns representatives of different features of experiments data (min, max, median, std, entropy, impulse factor, margin factor, frequence center, mean_square_frequency, root_mean_square_frequency, root_variance_frequency, crest_factor)  from the orginal features (a1_x, a2_x, a1_y, a2_y, a1_z, a2_z, hz (Hertz) and watt)
- - Generating sub-dataset to explore the correllation of features: df_max, df_min, df_median, df_entropy, df_mean_square_frequency, df_entropy
+ - Generating sub-dataset to explore the correllation of features: df_max, df_min, df_median, df_std, df_entropy, df_mean_square_frequency.
     + 'df_max' dataset description:
    ![](plots/df_max_description.png)
    
@@ -29,7 +29,7 @@ The bearings were mounted on the shaft as shown in Figure 1.
 
 
 #### 1. KMean clustering methods:
- + **2 features**: Running automated loops to detect pairs with highest Silhouette score:
+ + **2 features**: Running automated loops on each of sub-dataset to detect pairs with highest Silhouette score:
 
 | # 2 features      | Clusters | Score |
 | ------------------| -------- | ----- |
@@ -93,7 +93,7 @@ The bearings were mounted on the shaft as shown in Figure 1.
   + Estimated number of noise points: 0
   + Silhouette Coefficient: 0.660
 
-*** With **4 features**: 'a1_y_median', 'a2_y_median','hert_median'
+*** With **4 features**: 'a1_x_median','a1_y_median','a2_y_median', 'hert_median'
   + Estimated number of clusters: 2
   + Estimated number of noise points: 0
   +Silhouette Coefficient: 0.814
