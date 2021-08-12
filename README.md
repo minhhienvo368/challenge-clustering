@@ -28,7 +28,7 @@ The bearings were mounted on the shaft as shown in Figure 1.
     <img src = "plots/correlation_matrix_MAX.png" width = "500" height = "400">
 
 #### 1. KMean clustering methods:
- + **2 features**: Running automated loops on each of sub-dataset to detect pairs with highest Silhouette score:
++ **Using Kmeans on 2 features**: Running automated loops on each of sub-dataset to detect the pairs with highest Silhouette score:
 
 | # 2 features      | Clusters | Score |
 | ------------------| -------- | ----- |
@@ -43,19 +43,19 @@ The bearings were mounted on the shaft as shown in Figure 1.
    
    <img src = "plots/a1y_medianVSa2y_median_elbow.png" width = "500" height = "400">
 
- + **3 features**: a1_y_median, a2_y_median, hertz_median. **Silhouette score: 0.808**
+ + **Using Kmeans on 3 features**: a1_y_median, a2_y_median, hertz_median. **Silhouette score: 0.808**
    ![](plots/3D_3features.png)
 
- + **4 features**: a1_y_median, a2_y_median, 'hert_median', 'a1_x_median'. **Silhouette score: 0.793**
+ + **Using Kmeans on 4 features**: a1_y_median, a2_y_median, 'hert_median', 'a1_x_median'. **Silhouette score: 0.793**
      <img src = "plots/4features.png" width = "450" height = "600">
     
- + **5 features**: 'a1_x_median', 'a2_x_median','a1_y_median','a2_y_median', 'hert_median'.  **Silhouette score: 0.737**
+ + **Using Kmeans on 5 features**: 'a1_x_median', 'a2_x_median','a1_y_median','a2_y_median', 'hert_median'.  **Silhouette score: 0.737**
      <img src = "plots/5features.png" width = "450" height = "600">
     
- + **6 features**: 'a1_y_median', 'a2_y_median','a1_y_median','a2_y_median', 'hert_median', 'w_median'.  **Silhouette score: 0.791**
+ + **Using Kmeans on 6 features**: 'a1_y_median', 'a2_y_median','a1_y_median','a2_y_median', 'hert_median', 'w_median'.  **Silhouette score: 0.791**
      <img src = "plots/6features.png" width = "450" height = "600">
 
- #### Results of Kmeans corresponding with 2, 3, 4, 5 ,6-features: 
+ #### Results of Kmeans corresponding with 2, 3, 4, 5 ,6 -features: 
     Best silhouette scores for n features (KMeans++) using all the dataset
 | # features | Clusters | Score |  
 | ---------- | -------- | ----- |
@@ -66,17 +66,17 @@ The bearings were mounted on the shaft as shown in Figure 1.
 | 6          | 2        | 0.791 |
 
 #### 2. DBSCAN clustering method:
-*** With **2 features**: 'a1_y_median', 'a2_y_median', bearing_dbscan = DBSCAN(eps=0.5, min_samples=10)
+*** Using DBSCAN on **2 features**: 'a1_y_median', 'a2_y_median', bearing_dbscan = DBSCAN(eps=0.5, min_samples=10)
   + Estimated number of clusters: 1
   + Estimated number of noise points: 5
   + Silhouette Coefficient for the Bearing Dataset Clusters: 0.79
 
-*** With **3 features**: 'a1_y_median', 'a2_y_median','hert_median'
+*** Using DBSCAN on **3 features**: 'a1_y_median', 'a2_y_median','hert_median'
   + Estimated number of clusters: 1
   + Estimated number of noise points: 18
   + Silhouette Coefficient for the Bearing Dataset Clusters: 0.57
 
-*** With **4 features**: a1_y_median','a2_y_median', 'hert_median', 'w_median'
+*** Using DBSCAN on **4 features**: a1_y_median','a2_y_median', 'hert_median', 'w_median'
   + Estimated number of clusters: 1
   + Estimated number of noise points: 44
   + Silhouette Coefficient for the Bearing Dataset Clusters: 0.24
